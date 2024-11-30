@@ -1,0 +1,1 @@
+scottish_cities = [None] * 7
