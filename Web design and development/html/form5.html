@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Form</title>
+</head>
+<body>
+    <h1>Booking Form</h1>
+    <form>
+        <!-- First Name -->
+        <label for="firstname">First name:</label><br>
+        <input type="text" id="firstname" name="firstname" size="30" maxlength="15" required><br><br>
+
+        <!-- Last Name -->
+        <label for="lastname">Last name:</label><br>
+        <input type="text" id="lastname" name="lastname" size="30" maxlength="15" required><br><br>
+
+        <!-- Number of Seats -->
+        <label for="seats">Number of Seats Required (between 1 and 10):</label><br>
+        <input type="number" id="seats" name="seats" min="1" max="10" required><br><br>
+
+        <!-- Dietary Requirements -->
+        <label for="dietary_requirements">Please enter any dietary requirements:</label><br>
+        <textarea id="dietary_requirements" name="dietary_requirements" rows="5" cols="40" placeholder="Enter your dietary requirements here..."></textarea><br><br>
+
+        <!-- Booking Time -->
+        <p>Choose your booking time:</p>
+        <input type="radio" id="time1" name="time" value="09:00 to 13:00" required>
+        <label for="time1">09:00-13:00</label><br>
+
+        <input type="radio" id="time2" name="time" value="13:00 to 17:00">
+        <label for="time2">13:00-17:00</label><br>
+
+        <input type="radio" id="time3" name="time" value="17:00 to 22:00">
+        <label for="time3">17:00-22:00</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" onclick="alert('Form Submitted, Thank You!')" value="Submit">
+    </form>
+</body>
+</html>

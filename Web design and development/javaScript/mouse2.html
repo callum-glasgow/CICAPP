@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over and Out Example</title>
+    <script>
+        function mouseOver() {
+            document.getElementById("demo").style.color = "red";
+        }
+
+        function mouseOut() {
+            document.getElementById("demo").style.color = "black";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Welcome</h1>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar Example</title>
+    <style>
+        nav ul {
+            list-style-type: none; /* Removes bullet points */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Ensures the floated items are contained */
+        }
+        nav ul li {
+            float: left; /* Displays list items horizontally */
+            width: 100px; /* Sets a fixed width for each item */
+            text-align: center; /* Centers the text within each item */
+        }
+        nav ul li a {
+            display: block; /* Makes the entire area clickable */
+            text-decoration: none; /* Removes underline from links */
+            padding: 10px 0; /* Adds padding for better clickability */
+            background-color: lightgray; /* Adds a default background color */
+            color: black; /* Sets default text color */
+        }
+        nav ul li a:hover {
+            background-color: blue; /* Changes background color on hover */
+            color: white; /* Changes text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Navigation Bar Example</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="bitesize.html">Bitesize</a></li>
+            <li><a href="sport.html">Sport</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

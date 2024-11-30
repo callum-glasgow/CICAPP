@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Size Example (with Margin and Padding)</title>
+    <style>
+        body {
+            width: 400px;
+            margin: 0 auto; /* Centers the body horizontally */
+            background-color: lightgray;
+            padding: 10px; /* Adds some inner spacing to the body */
+            box-sizing: border-box; /* Ensures padding is included in the width */
+        }
+        p.example {
+            background-color: red;
+            width: 200px;
+            height: auto; /* Adjust height to fit content and padding */
+            color: white;
+            padding: 50px; /* Adds inner spacing inside the block */
+            margin: 100px; /* Adds space outside the block */
+            box-sizing: border-box; /* Ensures padding is included in the width */
+        }
+    </style>
+</head>
+<body>
+    <h1>Size Example (with Margin and Padding)</h1>
+    <p>
+        By setting the <code>width</code>, <code>padding</code>, and <code>margin</code> properties, we can control 
+        the size and positioning of elements on the page. In this case:
+    </p>
+    <ul>
+        <li>The <code>body</code> width is set to 400px, and it is centered horizontally using <code>margin: 0 auto</code>.</li>
+        <li>The red block has a width of 200px and padding of 50px, which adds inner spacing.</li>
+        <li>A margin of 100px is applied, creating space outside the red block.</li>
+    </ul>
+    <p class="example">
+        This text is inside a red block with 50px padding and 100px margin on all sides.
+    </p>
+</body>
+</html>
